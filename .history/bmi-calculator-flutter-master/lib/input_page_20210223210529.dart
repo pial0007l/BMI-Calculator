@@ -1,7 +1,6 @@
 import 'package:flutter/material.dart';
 
 const bottomContainerHeight = 80.0;
-const card_color = Color(0xFF1D1E33);
 
 class InputPage extends StatefulWidget {
   @override
@@ -24,7 +23,7 @@ class _InputPageState extends State<InputPage> {
                 child: Container(
                   margin: EdgeInsets.all(15.0),
                   decoration: BoxDecoration(
-                    color: card_color,
+                    color: Color(0xFF1D1E33),
                     borderRadius: BorderRadius.circular(10.0),
                   ),
                 ),
@@ -50,33 +49,28 @@ class _InputPageState extends State<InputPage> {
             ),
           ),
           Expanded(
-              child: Row(
-            children: [
-              Expanded(
-                child: Container(
-                  margin: EdgeInsets.all(15.0),
-                  decoration: BoxDecoration(
-                    color: Color(0xFF1D1E33),
-                    borderRadius: BorderRadius.circular(10.0),
+            child: Row(
+              children: [
+                Expanded(
+                  child: Container(
+                    margin: EdgeInsets.all(15.0),
+                    decoration: BoxDecoration(
+                      color: Color(0xFF1D1E33),
+                      borderRadius: BorderRadius.circular(10.0),
+                    ),
                   ),
                 ),
-              ),
-              Expanded(
-                child: Container(
-                  margin: EdgeInsets.all(15.0),
-                  decoration: BoxDecoration(
-                    color: Color(0xFF1D1E33),
-                    borderRadius: BorderRadius.circular(10.0),
+                Expanded(
+                  child: Container(
+                    margin: EdgeInsets.all(15.0),
+                    decoration: BoxDecoration(
+                      color: Color(0xFF1D1E33),
+                      borderRadius: BorderRadius.circular(10.0),
+                    ),
                   ),
                 ),
-              ),
-            ],
-          )),
-          Container(
-            color: Color(0xFFEB1555),
-            margin: EdgeInsets.only(top: 10.0),
-            width: double.infinity,
-            height: bottomContainerHeight,
+              ],
+            ),
           ),
         ],
       ),

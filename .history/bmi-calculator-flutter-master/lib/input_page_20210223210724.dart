@@ -1,7 +1,6 @@
 import 'package:flutter/material.dart';
 
 const bottomContainerHeight = 80.0;
-const card_color = Color(0xFF1D1E33);
 
 class InputPage extends StatefulWidget {
   @override
@@ -24,7 +23,7 @@ class _InputPageState extends State<InputPage> {
                 child: Container(
                   margin: EdgeInsets.all(15.0),
                   decoration: BoxDecoration(
-                    color: card_color,
+                    color: Color(0xFF1D1E33),
                     borderRadius: BorderRadius.circular(10.0),
                   ),
                 ),
