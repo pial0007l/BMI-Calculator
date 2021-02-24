@@ -22,11 +22,7 @@ class _InputPageState extends State<InputPage> {
     if (gender == 1) {
       if (maleCardColor == inactiveCordColor) {
         maleCardColor = card_color;
-        femaleCardColor = inactiveCordColor;
-      }
-    } else if (gender == 2) {
-      if (femaleCardColor == inactiveCordColor) {
-        femaleCardColor = card_color;
+      } else {
         maleCardColor = inactiveCordColor;
       }
     }
@@ -48,12 +44,12 @@ class _InputPageState extends State<InputPage> {
                 child: GestureDetector(
                   onTap: () {
                     setState(() {
-                      updateColor(1);
-                      //print('Working');
+                      // updateColor(1);
+                      print('Working');
                     });
                   },
                   child: ReusableCard(
-                    colour: maleCardColor,
+                    colour: card_color,
                     cardChild: ReusableGColumn(
                       icon: FontAwesomeIcons.mars,
                       txt: 'MALE',
@@ -64,13 +60,9 @@ class _InputPageState extends State<InputPage> {
               Expanded(
                 // Female Icon
                 child: GestureDetector(
-                  onTap: () {
-                    setState(() {
-                      updateColor(2);
-                    });
-                  },
+                  onTap: () {},
                   child: ReusableCard(
-                    colour: femaleCardColor,
+                    colour: card_color,
                     cardChild: ReusableGColumn(
                       icon: FontAwesomeIcons.venus,
                       txt: 'FEMALE',

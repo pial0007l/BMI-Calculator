@@ -23,11 +23,17 @@ class _InputPageState extends State<InputPage> {
       if (maleCardColor == inactiveCordColor) {
         maleCardColor = card_color;
         femaleCardColor = inactiveCordColor;
+      } else {
+        maleCardColor = inactiveCordColor;
+        femaleCardColor = card_color;
       }
     } else if (gender == 2) {
       if (femaleCardColor == inactiveCordColor) {
         femaleCardColor = card_color;
         maleCardColor = inactiveCordColor;
+      } else {
+        femaleCardColor = inactiveCordColor;
+        maleCardColor = card_color;
       }
     }
   }

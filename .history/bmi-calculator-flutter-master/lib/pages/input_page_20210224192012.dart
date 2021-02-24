@@ -18,20 +18,6 @@ class _InputPageState extends State<InputPage> {
   Color maleCardColor = inactiveCordColor;
   Color femaleCardColor = inactiveCordColor;
 
-  void updateColor(int gender) {
-    if (gender == 1) {
-      if (maleCardColor == inactiveCordColor) {
-        maleCardColor = card_color;
-        femaleCardColor = inactiveCordColor;
-      }
-    } else if (gender == 2) {
-      if (femaleCardColor == inactiveCordColor) {
-        femaleCardColor = card_color;
-        maleCardColor = inactiveCordColor;
-      }
-    }
-  }
-
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -46,14 +32,9 @@ class _InputPageState extends State<InputPage> {
             children: [
               Expanded(
                 child: GestureDetector(
-                  onTap: () {
-                    setState(() {
-                      updateColor(1);
-                      //print('Working');
-                    });
-                  },
+                  onTap: () {},
                   child: ReusableCard(
-                    colour: maleCardColor,
+                    colour: card_color,
                     cardChild: ReusableGColumn(
                       icon: FontAwesomeIcons.mars,
                       txt: 'MALE',
@@ -64,13 +45,9 @@ class _InputPageState extends State<InputPage> {
               Expanded(
                 // Female Icon
                 child: GestureDetector(
-                  onTap: () {
-                    setState(() {
-                      updateColor(2);
-                    });
-                  },
+                  onTap: () {},
                   child: ReusableCard(
-                    colour: femaleCardColor,
+                    colour: card_color,
                     cardChild: ReusableGColumn(
                       icon: FontAwesomeIcons.venus,
                       txt: 'FEMALE',
