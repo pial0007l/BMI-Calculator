@@ -79,9 +79,7 @@ class _InputPageState extends State<InputPage> {
                     });
                   },
                   child: ReusableCard(
-                    colour: selectGender == Gender.female
-                        ? card_color
-                        : inactiveCordColor,
+                    colour: femaleCardColor,
                     cardChild: ReusableGColumn(
                       icon: FontAwesomeIcons.venus,
                       txt: 'FEMALE',

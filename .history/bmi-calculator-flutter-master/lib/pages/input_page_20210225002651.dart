@@ -55,14 +55,12 @@ class _InputPageState extends State<InputPage> {
                 child: GestureDetector(
                   onTap: () {
                     setState(() {
-                      selectGender = Gender.male;
+                      updateColor(Gender.male);
                       //print('Working');
                     });
                   },
                   child: ReusableCard(
-                    colour: selectGender == Gender.male
-                        ? card_color
-                        : inactiveCordColor,
+                    colour: maleCardColor,
                     cardChild: ReusableGColumn(
                       icon: FontAwesomeIcons.mars,
                       txt: 'MALE',
@@ -75,13 +73,11 @@ class _InputPageState extends State<InputPage> {
                 child: GestureDetector(
                   onTap: () {
                     setState(() {
-                      selectGender = Gender.female;
+                      updateColor(Gender.female);
                     });
                   },
                   child: ReusableCard(
-                    colour: selectGender == Gender.female
-                        ? card_color
-                        : inactiveCordColor,
+                    colour: femaleCardColor,
                     cardChild: ReusableGColumn(
                       icon: FontAwesomeIcons.venus,
                       txt: 'FEMALE',

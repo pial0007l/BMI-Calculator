@@ -60,9 +60,7 @@ class _InputPageState extends State<InputPage> {
                     });
                   },
                   child: ReusableCard(
-                    colour: selectGender == Gender.male
-                        ? card_color
-                        : inactiveCordColor,
+                    colour: maleCardColor,
                     cardChild: ReusableGColumn(
                       icon: FontAwesomeIcons.mars,
                       txt: 'MALE',
@@ -79,9 +77,7 @@ class _InputPageState extends State<InputPage> {
                     });
                   },
                   child: ReusableCard(
-                    colour: selectGender == Gender.female
-                        ? card_color
-                        : inactiveCordColor,
+                    colour: femaleCardColor,
                     cardChild: ReusableGColumn(
                       icon: FontAwesomeIcons.venus,
                       txt: 'FEMALE',
