@@ -23,13 +23,13 @@ class _InputPageState extends State<InputPage> {
   Color maleCardColor = inactiveCordColor;
   Color femaleCardColor = inactiveCordColor;
 
-  void updateColor(Gender gender) {
-    if (gender == Gender.male) {
+  void updateColor(int gender) {
+    if (gender == 1) {
       if (maleCardColor == inactiveCordColor) {
         maleCardColor = card_color;
         femaleCardColor = inactiveCordColor;
       }
-    } else if (gender == Gender.female) {
+    } else if (gender == 2) {
       if (femaleCardColor == inactiveCordColor) {
         femaleCardColor = card_color;
         maleCardColor = inactiveCordColor;
@@ -53,7 +53,7 @@ class _InputPageState extends State<InputPage> {
                 child: GestureDetector(
                   onTap: () {
                     setState(() {
-                      updateColor(Gender.male);
+                      updateColor(1);
                       //print('Working');
                     });
                   },
@@ -71,7 +71,7 @@ class _InputPageState extends State<InputPage> {
                 child: GestureDetector(
                   onTap: () {
                     setState(() {
-                      updateColor(Gender.female);
+                      updateColor(2);
                     });
                   },
                   child: ReusableCard(
