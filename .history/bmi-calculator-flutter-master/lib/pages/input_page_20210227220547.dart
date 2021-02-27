@@ -97,7 +97,7 @@ class _InputPageState extends State<InputPage> {
           )),
           Container(
             alignment: Alignment.center,
-            color: bottomContainerColor,
+            color: Color(0xFFEB1555),
             margin: EdgeInsets.only(top: 10.0),
             width: double.infinity,
             height: bottomContainerHeight,
