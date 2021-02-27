@@ -55,9 +55,7 @@ class _InputPageState extends State<InputPage> {
                 // Female Icon
                 child: ReusableCard(
                   onPress: () {
-                    setState(() {
-                      selectGender = Gender.female;
-                    });
+                    selectGender = Gender.female;
                   },
                   colour: selectGender == Gender.female
                       ? card_color
