@@ -18,7 +18,7 @@ class InputPage extends StatefulWidget {
 
 class _InputPageState extends State<InputPage> {
   Gender selectGender;
-  double height;
+  double height = 0.0;
 
   @override
   Widget build(BuildContext context) {
@@ -97,13 +97,13 @@ class _InputPageState extends State<InputPage> {
                   ),
                   Slider(
                       value: height,
+                      min: 1.0,
                       max: 220.0,
-                      min: 0.0,
                       activeColor: Color(0xFFEB1555),
                       inactiveColor: Color(0xFF8D8E98),
                       onChanged: (double newValue) {
                         setState(() {
-                          height = double.parse((newValue).toStringAsFixed(1));
+                          height = newValue;
                         });
                       }),
                 ],
