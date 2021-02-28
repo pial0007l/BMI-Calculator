@@ -106,7 +106,7 @@ class _InputPageState extends State<InputPage> {
                     child: Slider(
                         value: height,
                         max: 220.0,
-                        min: 0.0,
+                        min: 10.0,
                         activeColor: Color(0xFFEB1555),
                         inactiveColor: Color(0xFF8D8E98),
                         onChanged: (double newValue) {
