@@ -1,7 +1,5 @@
 import 'package:flutter/material.dart';
 
-import '../constance.dart';
-
 class ReusableGColumn extends StatelessWidget {
   final IconData icon;
   final String txt;

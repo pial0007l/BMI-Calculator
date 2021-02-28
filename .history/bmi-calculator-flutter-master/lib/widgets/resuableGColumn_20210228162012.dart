@@ -1,6 +1,9 @@
 import 'package:flutter/material.dart';
 
-import '../constance.dart';
+const lableTextStyle = TextStyle(
+  fontSize: 18.0,
+  color: Color(0xFF8D8E98),
+);
 
 class ReusableGColumn extends StatelessWidget {
   final IconData icon;
