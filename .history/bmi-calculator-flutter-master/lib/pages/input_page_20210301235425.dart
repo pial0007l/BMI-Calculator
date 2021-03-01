@@ -141,23 +141,9 @@ class _InputPageState extends State<InputPage> {
                         style: knumberStyle,
                       ),
                       Row(
-                        mainAxisAlignment: MainAxisAlignment.spaceAround,
                         children: [
                           RoundIconButton(
-                            icon: FontAwesomeIcons.plus,
-                            onPress: () {
-                              setState(() {
-                                weight++;
-                              });
-                            },
-                          ),
-                          RoundIconButton(
-                            icon: FontAwesomeIcons.minus,
-                            onPress: () {
-                              setState(() {
-                                weight--;
-                              });
-                            },
+                            icon: Icons.add,
                           ),
                         ],
                       )

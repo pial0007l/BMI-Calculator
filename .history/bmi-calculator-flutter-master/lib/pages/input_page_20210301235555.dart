@@ -141,10 +141,10 @@ class _InputPageState extends State<InputPage> {
                         style: knumberStyle,
                       ),
                       Row(
-                        mainAxisAlignment: MainAxisAlignment.spaceAround,
+                        mainAxisAlignment: MainAxisAlignment.center,
                         children: [
                           RoundIconButton(
-                            icon: FontAwesomeIcons.plus,
+                            icon: Icons.add,
                             onPress: () {
                               setState(() {
                                 weight++;
@@ -152,10 +152,10 @@ class _InputPageState extends State<InputPage> {
                             },
                           ),
                           RoundIconButton(
-                            icon: FontAwesomeIcons.minus,
+                            icon: Icons.add,
                             onPress: () {
                               setState(() {
-                                weight--;
+                                weight++;
                               });
                             },
                           ),

@@ -144,7 +144,7 @@ class _InputPageState extends State<InputPage> {
                         mainAxisAlignment: MainAxisAlignment.spaceAround,
                         children: [
                           RoundIconButton(
-                            icon: FontAwesomeIcons.plus,
+                            icon: Icons.add,
                             onPress: () {
                               setState(() {
                                 weight++;
@@ -152,7 +152,7 @@ class _InputPageState extends State<InputPage> {
                             },
                           ),
                           RoundIconButton(
-                            icon: FontAwesomeIcons.minus,
+                            icon: Icons.,
                             onPress: () {
                               setState(() {
                                 weight--;
