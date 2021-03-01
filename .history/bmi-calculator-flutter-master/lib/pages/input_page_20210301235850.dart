@@ -21,7 +21,6 @@ class _InputPageState extends State<InputPage> {
   Gender selectGender;
   double height = 0.0;
   int weight = 10;
-  int age = 1;
 
   @override
   Widget build(BuildContext context) {
@@ -173,7 +172,7 @@ class _InputPageState extends State<InputPage> {
                     mainAxisAlignment: MainAxisAlignment.center,
                     children: [
                       Text(
-                        'AGE',
+                        'WEIGHT',
                         style: lableTextStyle,
                       ),
                       Text(
@@ -202,7 +201,7 @@ class _InputPageState extends State<InputPage> {
                         ],
                       )
                     ],
-                  ),
+                  ),,
                 ),
               ),
             ],

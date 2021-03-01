@@ -173,7 +173,7 @@ class _InputPageState extends State<InputPage> {
                     mainAxisAlignment: MainAxisAlignment.center,
                     children: [
                       Text(
-                        'AGE',
+                        'WEIGHT',
                         style: lableTextStyle,
                       ),
                       Text(
