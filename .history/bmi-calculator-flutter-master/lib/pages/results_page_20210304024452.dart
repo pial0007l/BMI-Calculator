@@ -1,7 +1,6 @@
 import 'package:bmi_calculator/constance.dart';
 import 'package:bmi_calculator/widgets/reusableCard.dart';
 import 'package:flutter/material.dart';
-import 'package:google_fonts/google_fonts.dart';
 
 class ResultsPage extends StatelessWidget {
   const ResultsPage({Key key}) : super(key: key);
@@ -30,47 +29,17 @@ class ResultsPage extends StatelessWidget {
                     //**Status */
                     'OVERWEIGHT',
                     style: lableTextStyle.copyWith(
-                      fontSize: 25,
-                      fontWeight: FontWeight.bold,
-                      color: Colors.green[200],
-                    ),
+                        fontSize: 25, fontWeight: FontWeight.bold),
                   ),
                   Text(
                     //**BMI COUNT */
                     '26.7',
-                    style: knumberStyle.copyWith(
-                      fontSize: 120.0,
-                    ),
-                  ),
-                  Text(
-                    //**Coments */
-                    'OVERWEIGHT',
                     style: lableTextStyle.copyWith(
                       fontSize: 25,
-                      color: Colors.white,
+                      fontWeight: FontWeight.bold,
                     ),
                   ),
                 ],
-              ),
-            ),
-          ),
-          GestureDetector(
-            onTap: () {
-              Navigator.pop(context);
-            },
-            child: Container(
-              // ************ Calculate Button **********
-              alignment: Alignment.center,
-              color: bottomContainerColor,
-              margin: EdgeInsets.only(top: 10.0),
-              width: double.infinity,
-              height: bottomContainerHeight,
-              child: Text(
-                'RE-CALCULATE',
-                style: GoogleFonts.openSans(
-                  fontSize: 30.0,
-                  fontStyle: FontStyle.normal,
-                ),
               ),
             ),
           ),

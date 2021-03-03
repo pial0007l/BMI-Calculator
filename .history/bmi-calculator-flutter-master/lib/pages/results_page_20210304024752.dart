@@ -32,7 +32,6 @@ class ResultsPage extends StatelessWidget {
                     style: lableTextStyle.copyWith(
                       fontSize: 25,
                       fontWeight: FontWeight.bold,
-                      color: Colors.green[200],
                     ),
                   ),
                   Text(
@@ -40,14 +39,6 @@ class ResultsPage extends StatelessWidget {
                     '26.7',
                     style: knumberStyle.copyWith(
                       fontSize: 120.0,
-                    ),
-                  ),
-                  Text(
-                    //**Coments */
-                    'OVERWEIGHT',
-                    style: lableTextStyle.copyWith(
-                      fontSize: 25,
-                      color: Colors.white,
                     ),
                   ),
                 ],

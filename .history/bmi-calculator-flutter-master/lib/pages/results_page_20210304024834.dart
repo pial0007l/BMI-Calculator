@@ -42,14 +42,6 @@ class ResultsPage extends StatelessWidget {
                       fontSize: 120.0,
                     ),
                   ),
-                  Text(
-                    //**Coments */
-                    'OVERWEIGHT',
-                    style: lableTextStyle.copyWith(
-                      fontSize: 25,
-                      color: Colors.white,
-                    ),
-                  ),
                 ],
               ),
             ),

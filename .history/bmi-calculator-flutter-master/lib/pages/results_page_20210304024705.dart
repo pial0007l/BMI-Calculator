@@ -30,24 +30,13 @@ class ResultsPage extends StatelessWidget {
                     //**Status */
                     'OVERWEIGHT',
                     style: lableTextStyle.copyWith(
-                      fontSize: 25,
-                      fontWeight: FontWeight.bold,
-                      color: Colors.green[200],
-                    ),
+                        fontSize: 25, fontWeight: FontWeight.bold),
                   ),
                   Text(
                     //**BMI COUNT */
                     '26.7',
                     style: knumberStyle.copyWith(
-                      fontSize: 120.0,
-                    ),
-                  ),
-                  Text(
-                    //**Coments */
-                    'OVERWEIGHT',
-                    style: lableTextStyle.copyWith(
-                      fontSize: 25,
-                      color: Colors.white,
+                      fontSize: 60.0,
                     ),
                   ),
                 ],

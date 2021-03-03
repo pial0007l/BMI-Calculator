@@ -43,11 +43,10 @@ class ResultsPage extends StatelessWidget {
                     ),
                   ),
                   Text(
-                    //**Coments */
+                    //**Status */
                     'OVERWEIGHT',
                     style: lableTextStyle.copyWith(
                       fontSize: 25,
-                      color: Colors.white,
                     ),
                   ),
                 ],
