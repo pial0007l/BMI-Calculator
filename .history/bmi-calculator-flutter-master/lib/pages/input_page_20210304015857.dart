@@ -212,9 +212,7 @@ class _InputPageState extends State<InputPage> {
             ],
           )),
           GestureDetector(
-            onTap: () {
-              Navigator.pushNamed(context, '/resiltsPage');
-            },
+            onTap: Navigator.pushNamed('/resiltsPage');
             child: Container(
               // ************ Calculate Button **********
               alignment: Alignment.center,
