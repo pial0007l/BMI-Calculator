@@ -1,5 +1,4 @@
 import 'package:bmi_calculator/widgets/RoundIconButton.dart';
-import 'package:bmi_calculator/widgets/bottomButton.dart';
 import 'package:flutter/material.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 import 'package:google_fonts/google_fonts.dart';
@@ -125,95 +124,93 @@ class _InputPageState extends State<InputPage> {
             ),
           ),
           Expanded(
-            // *********** Weight Card **********
-            child: Row(
-              children: [
-                Expanded(
-                  child: ReusableCard(
-                    colour: card_color,
-                    cardChild: Column(
-                      mainAxisAlignment: MainAxisAlignment.center,
-                      children: [
-                        Text(
-                          'WEIGHT',
-                          style: lableTextStyle,
-                        ),
-                        Text(
-                          weight.toString(),
-                          style: knumberStyle,
-                        ),
-                        Row(
-                          mainAxisAlignment: MainAxisAlignment.spaceAround,
-                          children: [
-                            RoundIconButton(
-                              icon: FontAwesomeIcons.plus,
-                              onPress: () {
-                                setState(() {
-                                  weight++;
-                                });
-                              },
-                            ),
-                            RoundIconButton(
-                              icon: FontAwesomeIcons.minus,
-                              onPress: () {
-                                setState(() {
-                                  if (weight > 0) {
-                                    weight--;
-                                  }
-                                });
-                              },
-                            ),
-                          ],
-                        )
-                      ],
-                    ),
+              // *********** Weight Card **********
+              child: Row(
+            children: [
+              Expanded(
+                child: ReusableCard(
+                  colour: card_color,
+                  cardChild: Column(
+                    mainAxisAlignment: MainAxisAlignment.center,
+                    children: [
+                      Text(
+                        'WEIGHT',
+                        style: lableTextStyle,
+                      ),
+                      Text(
+                        weight.toString(),
+                        style: knumberStyle,
+                      ),
+                      Row(
+                        mainAxisAlignment: MainAxisAlignment.spaceAround,
+                        children: [
+                          RoundIconButton(
+                            icon: FontAwesomeIcons.plus,
+                            onPress: () {
+                              setState(() {
+                                weight++;
+                              });
+                            },
+                          ),
+                          RoundIconButton(
+                            icon: FontAwesomeIcons.minus,
+                            onPress: () {
+                              setState(() {
+                                if (weight > 0) {
+                                  weight--;
+                                }
+                              });
+                            },
+                          ),
+                        ],
+                      )
+                    ],
                   ),
                 ),
-                Expanded(
-                  child: ReusableCard(
-                    colour: card_color,
-                    cardChild: Column(
-                      mainAxisAlignment: MainAxisAlignment.center,
-                      children: [
-                        Text(
-                          'AGE',
-                          style: lableTextStyle,
-                        ),
-                        Text(
-                          age.toString(),
-                          style: knumberStyle,
-                        ),
-                        Row(
-                          mainAxisAlignment: MainAxisAlignment.spaceAround,
-                          children: [
-                            RoundIconButton(
-                              icon: FontAwesomeIcons.plus,
-                              onPress: () {
-                                setState(() {
-                                  age++;
-                                });
-                              },
-                            ),
-                            RoundIconButton(
-                              icon: FontAwesomeIcons.minus,
-                              onPress: () {
-                                setState(() {
-                                  if (age > 0) {
-                                    age--;
-                                  }
-                                });
-                              },
-                            ),
-                          ],
-                        )
-                      ],
-                    ),
+              ),
+              Expanded(
+                child: ReusableCard(
+                  colour: card_color,
+                  cardChild: Column(
+                    mainAxisAlignment: MainAxisAlignment.center,
+                    children: [
+                      Text(
+                        'AGE',
+                        style: lableTextStyle,
+                      ),
+                      Text(
+                        age.toString(),
+                        style: knumberStyle,
+                      ),
+                      Row(
+                        mainAxisAlignment: MainAxisAlignment.spaceAround,
+                        children: [
+                          RoundIconButton(
+                            icon: FontAwesomeIcons.plus,
+                            onPress: () {
+                              setState(() {
+                                age++;
+                              });
+                            },
+                          ),
+                          RoundIconButton(
+                            icon: FontAwesomeIcons.minus,
+                            onPress: () {
+                              setState(() {
+                                if (age > 0) {
+                                  age--;
+                                }
+                              });
+                            },
+                          ),
+                        ],
+                      )
+                    ],
                   ),
                 ),
-              ],
-            ),
-          ),
-          BottomButton(),
+              ),
+            ],
+          )),
         ],
       ),
     );

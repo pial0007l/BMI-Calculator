@@ -1,5 +1,4 @@
 import 'package:bmi_calculator/widgets/RoundIconButton.dart';
-import 'package:bmi_calculator/widgets/bottomButton.dart';
 import 'package:flutter/material.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 import 'package:google_fonts/google_fonts.dart';
@@ -213,7 +212,6 @@ class _InputPageState extends State<InputPage> {
               ],
             ),
           ),
-          BottomButton(),
         ],
       ),
     );
