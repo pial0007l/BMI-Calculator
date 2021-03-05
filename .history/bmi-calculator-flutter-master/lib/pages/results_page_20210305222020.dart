@@ -11,7 +11,7 @@ enum BodyStatus {
 
 class ResultsPage extends StatelessWidget {
   final double bmi = 0.0;
-  final String comments = '';
+  final String comments;
   @override
   Widget build(BuildContext context) {
     return Scaffold(
