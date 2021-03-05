@@ -49,7 +49,7 @@ class ResultsPage extends StatelessWidget {
                   ),
                   Text(
                     //**Coments */
-                    bmi.toString(),
+                    'OVERWEIGHT',
                     style: lableTextStyle.copyWith(
                       fontSize: 25,
                       color: Colors.white,
