@@ -1,11 +1,5 @@
 import 'dart:math';
 
-enum BodyStatus {
-  NORMAL,
-  OVERWEIGHT,
-  UNDERWEIGHT,
-}
-
 class CalculatorBrain {
   final int height;
   final int weight;
@@ -20,11 +14,7 @@ class CalculatorBrain {
 
   String getResult() {
     if (_bmi >= 25) {
-      return BodyStatus.OVERWEIGHT.toString();
     } else if (_bmi > 18.5) {
-      return BodyStatus.NORMAL.toString();
-    } else {
-      return BodyStatus.UNDERWEIGHT.toString();
-    }
+    } else {}
   }
 }

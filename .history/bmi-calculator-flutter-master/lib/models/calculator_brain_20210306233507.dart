@@ -24,7 +24,7 @@ class CalculatorBrain {
     } else if (_bmi > 18.5) {
       return BodyStatus.NORMAL.toString();
     } else {
-      return BodyStatus.UNDERWEIGHT.toString();
+      return BodyStatus.UNDERWEIGHT,toString();
     }
   }
 }
