@@ -215,8 +215,8 @@ class _InputPageState extends State<InputPage> {
           BottomButton(
             buttonTitle: 'CALCULATOR',
             onTap: () {
-              Navigator.pushNamed(context, '/resiltsPage');
-            },
+        Navigator.pushNamed(context, '/resiltsPage');
+      },,
           ),
         ],
       ),
