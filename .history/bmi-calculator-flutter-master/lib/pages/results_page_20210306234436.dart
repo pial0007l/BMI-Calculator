@@ -42,7 +42,7 @@ class ResultsPage extends StatelessWidget {
                 children: [
                   Text(
                     //**Status */
-                    resultText,
+                    'OVERWEIGHT',
                     style: lableTextStyle.copyWith(
                       fontSize: 25,
                       fontWeight: FontWeight.bold,
@@ -51,7 +51,7 @@ class ResultsPage extends StatelessWidget {
                   ),
                   Text(
                     //**BMI COUNT */
-                    bmiResult,
+                    bmi.toString(),
                     style: knumberStyle.copyWith(
                       fontSize: 120.0,
                     ),
@@ -59,7 +59,7 @@ class ResultsPage extends StatelessWidget {
                   Text(
                     //**Coments */
 
-                    interpretation,
+                    comments,
                     style: lableTextStyle.copyWith(
                       fontSize: 25,
                       color: Colors.white,

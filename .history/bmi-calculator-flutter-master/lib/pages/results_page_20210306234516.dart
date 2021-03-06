@@ -59,7 +59,7 @@ class ResultsPage extends StatelessWidget {
                   Text(
                     //**Coments */
 
-                    interpretation,
+                    comments,
                     style: lableTextStyle.copyWith(
                       fontSize: 25,
                       color: Colors.white,
