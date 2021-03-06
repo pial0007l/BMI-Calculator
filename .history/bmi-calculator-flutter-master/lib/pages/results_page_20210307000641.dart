@@ -61,7 +61,6 @@ class ResultsPage extends StatelessWidget {
                     //**Coments */
 
                     interpretation,
-                    textAlign: TextAlign.center,
                     style: lableTextStyle.copyWith(
                       fontSize: 25,
                       color: Colors.white,
