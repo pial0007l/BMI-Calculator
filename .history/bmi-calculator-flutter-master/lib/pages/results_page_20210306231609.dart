@@ -21,18 +21,11 @@ class ResultsPage extends StatelessWidget {
       body: Column(
         crossAxisAlignment: CrossAxisAlignment.stretch,
         children: [
-          Expanded(
-            child: Container(
-              padding: EdgeInsets.all(15.0),
-              alignment: Alignment.bottomLeft,
-              child: Text(
-                'Your Resusult',
-                style: knumberStyle,
-              ),
-            ),
+          Text(
+            'Your Resusult',
+            style: knumberStyle,
           ),
           Expanded(
-            flex: 5,
             child: ReusableCard(
               colour: card_color,
               cardChild: Column(
