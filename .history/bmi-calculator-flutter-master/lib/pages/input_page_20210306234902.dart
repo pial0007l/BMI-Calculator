@@ -1,4 +1,3 @@
-import 'package:bmi_calculator/models/calculator_brain.dart';
 import 'package:bmi_calculator/pages/results_page.dart';
 import 'package:bmi_calculator/widgets/RoundIconButton.dart';
 import 'package:bmi_calculator/widgets/bottomButton.dart';
@@ -21,7 +20,7 @@ class InputPage extends StatefulWidget {
 
 class _InputPageState extends State<InputPage> {
   Gender selectGender;
-  int height = 150;
+  double height = 0.0;
   int weight = 10;
   int age = 1;
 
@@ -111,12 +110,13 @@ class _InputPageState extends State<InputPage> {
                       overlayShape: RoundSliderOverlayShape(overlayRadius: 30),
                     ),
                     child: Slider(
-                        value: height.toDouble(),
+                        value: height,
                         max: 220.0,
-                        min: 120,
+                        min: 0.0,
                         onChanged: (double newValue) {
                           setState(() {
-                            height = newValue.toInt();
+                            height =
+                                double.parse((newValue).toStringAsFixed(1));
                           });
                         }),
                   ),
@@ -216,19 +216,7 @@ class _InputPageState extends State<InputPage> {
           BottomButton(
             buttonTitle: 'CALCULATOR',
             onTap: () {
-              CalculatorBrain calc =
-                  CalculatorBrain(height: height, weight: weight);
-
-              Navigator.push(
-                context,
-                MaterialPageRoute(
-                  builder: (context) => ResultsPage(
-                    bmiResult: calc.calculateBMI(),
-                    resultText: calc.getResult(),
-                    interpretation: calc.getInterpretation(),
-                  ),
-                ),
-              );
+              Navigator.push(context, MaterialPageRoute(builder: (context)=>ResultsPage(),)),
             },
           ),
         ],

@@ -21,7 +21,7 @@ class InputPage extends StatefulWidget {
 
 class _InputPageState extends State<InputPage> {
   Gender selectGender;
-  int height = 150;
+  int height = 0;
   int weight = 10;
   int age = 1;
 
@@ -111,12 +111,12 @@ class _InputPageState extends State<InputPage> {
                       overlayShape: RoundSliderOverlayShape(overlayRadius: 30),
                     ),
                     child: Slider(
-                        value: height.toDouble(),
+                        value: 150,
                         max: 220.0,
                         min: 120,
                         onChanged: (double newValue) {
                           setState(() {
-                            height = newValue.toInt();
+                            height = int.parse(newValue);
                           });
                         }),
                   ),
@@ -222,11 +222,7 @@ class _InputPageState extends State<InputPage> {
               Navigator.push(
                 context,
                 MaterialPageRoute(
-                  builder: (context) => ResultsPage(
-                    bmiResult: calc.calculateBMI(),
-                    resultText: calc.getResult(),
-                    interpretation: calc.getInterpretation(),
-                  ),
+                  builder: (context) => ResultsPage(),
                 ),
               );
             },
