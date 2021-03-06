@@ -20,11 +20,11 @@ class CalculatorBrain {
 
   String getResult() {
     if (_bmi >= 25) {
-      return 'OVERWEIGHT';
+      return (BodyStatus.OVERWEIGHT).toString();
     } else if (_bmi > 18.5) {
-      return 'NORMAL';
+      return (BodyStatus.NORMAL).toString();
     } else {
-      return 'UNDERWEIGHT';
+      return (BodyStatus.UNDERWEIGHT).toString();
     }
   }
 
