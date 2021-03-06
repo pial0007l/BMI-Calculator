@@ -4,8 +4,7 @@ import 'package:google_fonts/google_fonts.dart';
 import '../constance.dart';
 
 class BottomButton extends StatelessWidget {
-  final Function onTap;
-  final String buttonTitle;
+  ,
   @override
   Widget build(BuildContext context) {
     return GestureDetector(
